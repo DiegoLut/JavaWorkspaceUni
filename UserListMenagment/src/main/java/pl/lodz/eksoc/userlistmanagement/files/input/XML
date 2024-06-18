@@ -1,0 +1,26 @@
+<List>
+  <User>
+    <firstName>Anna</firstName>
+    <lastName>Nowak</lastName>
+    <age>28</age>
+    <email>anna.nowak@example.com</email>
+  </User>
+  <User>
+    <firstName>Piotr</firstName>
+    <lastName>Kowalski</lastName>
+    <age>35</age>
+    <email>piotr.kowalski@example.com</email>
+  </User>
+  <User>
+    <firstName>Ewa</firstName>
+    <lastName>Wiśniewska</lastName>
+    <age>42</age>
+    <email>ewa.wisniewska@example.com</email>
+  </User>
+  <User>
+    <firstName>Michał</firstName>
+    <lastName>Wójcik</lastName>
+    <age>31</age>
+    <email>michal.wojcik@example.com</email>
+  </User>
+</List>
