@@ -3,10 +3,7 @@ package pl.lodz.eksoc.userlistmanagement;
 import pl.lodz.eksoc.userlistmanagement.domain.UserRepo;
 import pl.lodz.eksoc.userlistmanagement.interfaces.UserSerializerInterface;
 import pl.lodz.eksoc.userlistmanagement.domain.User;
-import pl.lodz.eksoc.userlistmanagement.services.BinarySerializer;
-import pl.lodz.eksoc.userlistmanagement.services.JSONSerializer;
-import pl.lodz.eksoc.userlistmanagement.services.XMLSerializer;
-import pl.lodz.eksoc.userlistmanagement.services.CSVSerializer;
+import pl.lodz.eksoc.userlistmanagement.services.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -47,7 +44,8 @@ public class Main {
             switch (choice)
             {
                 case "1":
-                    userRepo.getList().forEach(user -> System.out.println(user.toString() + "\n"));
+                    userRepo.printAllUsers();
+//                    userRepo.getList().forEach(user -> System.out.println(user.toString() + "\n"));
                     break;
                 case "2":
                     System.out.println("Input a file path\n\n>>");
@@ -192,4 +190,34 @@ public class Main {
 
         return new ArrayList();
     }
+
+//    public static void serialize(UserSerializers serializer , List<User> list, String fileName)
+//    {
+//        try {
+//            serializer.serializeToJSON(list, fileName);
+//
+//        } catch (IOException ex) {
+//            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (Exception ex) {
+//            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
+//
+//    public static List<User> deserialize(UserSerializers serializer, String fileName)
+//    {
+//        try{
+//            return serializer.deserializeFromJSON(fileName);
+//
+//        } catch (IOException ex) {
+//            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (Exception ex) {
+//            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//
+//        return new ArrayList();
+//    }
+
+    // LONG SWICH CASE:
+
+
 }
